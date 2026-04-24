@@ -21,7 +21,7 @@
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0-EB6C2D?style=flat-square)](https://xgboost.ai/)
 [![Docs](https://img.shields.io/badge/Docs-36개-blue?style=flat-square&logo=readthedocs&logoColor=white)](./README.md)
 [![Lines](https://img.shields.io/badge/Lines-15k+-informational?style=flat-square)](./README.md)
-[![Theorems](https://img.shields.io/badge/Theorems_proven-210개-success?style=flat-square)](./README.md)
+[![Theorems](https://img.shields.io/badge/Theorems_proven-190+개-success?style=flat-square)](./README.md)
 [![Exercises](https://img.shields.io/badge/Exercises-108개-orange?style=flat-square)](./README.md)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square&logo=opensourceinitiative&logoColor=white)](./LICENSE)
 
@@ -193,7 +193,7 @@
 | [03. Gradient Boosting — 함수공간 경사하강법](./ch5-boosting/03-gradient-boosting.md) | 손실 $L(y, f)$의 **음의 gradient $-\partial L / \partial f$에 약분류기 fit**, $F_t = F_{t-1} + \eta h_t$, 함수공간 $\mathcal{F}$에서의 steepest descent 해석, **AdaBoost가 GBM의 지수손실 특수 사례**임을 증명 |
 | [04. XGBoost — 2차 Taylor 근사](./ch5-boosting/04-xgboost-second-order.md) | $L_t \approx L_{t-1} + g_t \Delta f + \frac{1}{2} h_t \Delta f^2$ 전개, leaf 값 최적해 $w^* = -G/(H+\lambda)$ 유도, **tree 버전 Newton-Raphson 한 스텝**임을 증명, regularization $\gamma\|T\| + \frac{1}{2}\lambda \sum w_j^2$ 해석 |
 | [05. LightGBM과 Histogram-based Splitting](./ch5-boosting/05-lightgbm-histogram.md) | **Gradient-based One-Side Sampling (GOSS)**의 분산 분석, **Exclusive Feature Bundling (EFB)**의 그래프 컬러링 환원, leaf-wise vs level-wise 트리 성장의 trade-off |
-| [06. Boosting의 과적합 저항성](./ch5-boosting/06-boosting-margin.md) | **훈련오차 0 이후에도 테스트 오차 감소** 현상의 경험적 관찰, **Margin theory** (Schapire et al. 1998)로 설명, $P(\text{margin} \leq \theta)$의 boost 후 감소가 일반화 경계에 미치는 영향 |
+| [06. Boosting의 과적합 저항성](./ch5-boosting/06-boosting-margin.md) | **훈련오차 0 이후에도 테스트 오차 감소** 현상의 경험적 관찰, **Margin theory** (Schapire et al. 1998)로 설명, $P(\text{margin} \leq \theta)$의 boost 후 감소가 일반화 경계에 미치는 영향, **modern NN의 double descent**와의 연결 |
 
 </details>
 
@@ -242,7 +242,7 @@
 
 ## 🏆 핵심 정리 인덱스
 
-이 레포에서 **완전한 증명**을 제공하는 대표 정리 모음입니다. 각 챕터의 문서에서 $\square$로 종결되는 엄밀한 증명을 확인할 수 있습니다. (전체 210+ 정리 중 핵심만 발췌)
+이 레포에서 **완전한 증명**을 제공하는 대표 정리 모음입니다. 각 챕터의 문서에서 $\square$로 종결되는 엄밀한 증명을 확인할 수 있습니다. (전체 190+ 정리 중 핵심만 발췌)
 
 | 정리 | 서술 | 출처 문서 |
 |------|------|----------|
@@ -272,7 +272,7 @@
 | **K-Means++ 경쟁비** | $\mathbb{E}[\phi] \leq 8(\ln k + 2) \cdot \phi^*$ — $O(\log k)$ 근사 보장 (Arthur & Vassilvitskii 2007) | [Ch7-02](./ch7-knn-clustering/02-kmeans-em.md) |
 | **PCA = SVD의 분산 최대화** | $\arg\max_{\|w\|=1} w^\top \Sigma w$ = top eigenvector — Rayleigh quotient | [Ch7-05](./ch7-knn-clustering/05-pca-tsne-umap.md) |
 
-> 💡 **챕터별 총 정리 수**: Ch1(34) · Ch2(28) · Ch3(26) · Ch4(31) · Ch5(38) · Ch6(24) · Ch7(29) — 합계 **210개 정리 + 증명**, 약 **15,000+ 라인** 분량.
+> 💡 **챕터별 총 정리 수**: Ch1(35) · Ch2(28) · Ch3(24) · Ch4(27) · Ch5(33) · Ch6(20) · Ch7(26) — 합계 **190+개 정리 + 증명**, 약 **15,000+ 라인** 분량.
 
 ---
 
