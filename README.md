@@ -2,15 +2,35 @@
 
 # 📊 ML Fundamentals Deep Dive
 
-**"`sklearn.linear_model.LinearRegression().fit(X, y)`를 호출하는 것과, Normal Equation $\hat{\beta} = (X^\top X)^{-1} X^\top y$를 MLE·기하학적 수직투영·Moore-Penrose pseudoinverse 세 관점에서 유도할 수 있는 것은 다르다"**
+### `sklearn.linear_model.LinearRegression().fit(X, y)` 를 호출하는 것과,
+
+### Normal Equation
+
+$$\hat\beta = (X^\top X)^{-1} X^\top y$$
+
+### 를 **MLE · 기하학적 수직투영 · Moore–Penrose pseudoinverse** 세 관점에서 유도할 수 있는 것은 **다르다.**
 
 <br/>
 
-> *"`RandomForestClassifier`를 **쓰는 것**과, $B \to \infty$에서 RF가 $\rho \sigma^2 + \frac{1-\rho}{B}\sigma^2$로 분산이 감소함을 증명할 수 있는 것은 다르다.  
-> `XGBoost`를 **쓰는 것**과, Gradient Boosting이 함수공간의 경사하강법이고 AdaBoost의 지수손실 최소화가 그 특수 사례임을 유도할 수 있는 것은 다르다."*
+> *`RandomForestClassifier` 를 **쓰는 것** 과, $B \to \infty$ 에서 Random Forest 의 분산이*
+>
+> $$\rho\sigma^2 + \frac{1 - \rho}{B}\sigma^2$$
+>
+> *로 감소함을 증명할 수 있는 것은 다르다.*
+>
+> *`XGBoost` 를 **쓰는 것** 과, **Gradient Boosting 이 함수공간의 경사하강법** 이고 AdaBoost 의 **지수손실 최소화** 가 그 특수 사례임을 유도할 수 있는 것은 다르다.*
 
-선형 회귀의 세 가지 유도부터 GLM·결정트리·Bagging·Boosting·생성모델·KNN/클러스터링까지  
-**"왜 고전 ML이 동작하는가"** 라는 질문으로 sklearn 한 줄 뒤에 숨은 수학을 끝까지 파헤칩니다
+<br/>
+
+**다루는 모델 (시간순)**
+
+Gauss 1809 *최소제곱* · Pearson 1901 *PCA* · Fisher 1922 *MLE* · Rosenblatt 1958 *Perceptron* · Cox 1958 *Logistic Regression* · Nelder–Wedderburn 1972 *GLM* · Breiman 1984 *CART* · Vapnik 1995 *SVM* · Breiman 1996 *Bagging* · Freund–Schapire 1997 *AdaBoost* · Breiman 2001 *Random Forest* · Friedman 2001 *Gradient Boosting* · Chen–Guestrin 2016 *XGBoost*
+
+<br/>
+
+**핵심 질문**
+
+> **왜 고전 ML 이 동작하는가** — sklearn 한 줄 뒤에 숨은 수학을, 선형 회귀의 세 가지 유도부터 GLM · 결정트리 · Bagging · Boosting · 생성모델 · KNN / 클러스터링까지 끝까지 파헤칩니다.
 
 <br/>
 
